@@ -22,6 +22,8 @@ class MenuSlides : Group() {
 
         for (it in 0 until count) {
             val slide = Image(slideTexture)
+            slide.width = Gdx.graphics.width.toFloat()
+            slide.height = Gdx.graphics.height.toFloat()
             slide.setPosition(slide.width * it.toFloat(), 0f)
             tiles.add(slide)
             addActor(slide)
